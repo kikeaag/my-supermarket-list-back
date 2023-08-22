@@ -5,6 +5,7 @@
 # my_supermarket_list_db
 
 1. Clonar el proyecto
+1.1 Version de Node: 18.13.0
 2. ``` npm i ```
 3. clonar el archivo ```.env.template``` y renombrarlo a ```.env```
 4. cambiar las variables de entorno

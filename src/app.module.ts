@@ -2,6 +2,11 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { ProductsModule } from './products/products.module';
+import { UsersModule } from './users/users.module';
+import { ListsModule } from './lists/lists.module';
+import { ListProductsModule } from './list_products/list_products.module';
+import { ListUsersModule } from './list_users/list_users.module';
+import { InvitesModule } from './invites/invites.module';
 
 @Module({
   imports: [
@@ -17,6 +22,11 @@ import { ProductsModule } from './products/products.module';
       synchronize: true,
     }),
     ProductsModule,
+    UsersModule,
+    ListsModule,
+    ListProductsModule,
+    ListUsersModule,
+    InvitesModule,
   ],
 })
 export class AppModule {}
