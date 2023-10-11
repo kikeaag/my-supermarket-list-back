@@ -1,12 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { ProductsModule } from './products/products.module';
 import { UsersModule } from './users/users.module';
 import { ListsModule } from './lists/lists.module';
-import { ListProductsModule } from './list_products/list_products.module';
-import { ListUsersModule } from './list_users/list_users.module';
-import { InvitesModule } from './invites/invites.module';
+import { ListProductDetailsModule } from './list_product_details/list_product_details.module';
+import { FriendsModule } from './friends/friends.module';
 
 @Module({
   imports: [
@@ -21,12 +19,10 @@ import { InvitesModule } from './invites/invites.module';
       autoLoadEntities: true,
       synchronize: true,
     }),
-    ProductsModule,
     UsersModule,
     ListsModule,
-    ListProductsModule,
-    ListUsersModule,
-    InvitesModule,
+    ListProductDetailsModule,
+    FriendsModule,
   ],
 })
 export class AppModule {}
