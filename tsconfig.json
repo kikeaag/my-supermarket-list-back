@@ -8,7 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "target": "es2021",
     "sourceMap": true,
-    "outDir": "./publics",
+    "outDir": "./public",
     "baseUrl": "./",
     "incremental": true,
     "skipLibCheck": true,
